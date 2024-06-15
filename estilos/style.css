@@ -44,10 +44,15 @@ section#login{
     transition: width .3s, height .3s;
     
 }
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px
+}
 
 section#login > div#imagem{
     display: block;
     background: var(--cor1) url(../imagens/pexels-pixabay-161154.jpg) no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     height: 200px;
     
