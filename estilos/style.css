@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+/* Paleta de cores
+      #180E0D
+      #0E7980
+      #FFFDEB
+*/
+:root{
+    --cor1:  #180E0D;
+    --cor2:  #0E7980;
+    --cor3:  #FFFDEB;
+
+}
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html {
+    background-color: var(--cor2);
+    height: 100vw;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vw;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    background-color: #FFFDEB;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.664)
+}
+
+section#login > div#imagem{
+    display: block;
+    background: var(--cor1) url(../imagens/pexels-pixabay-161154.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    
+}
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
