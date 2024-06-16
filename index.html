@@ -18,12 +18,12 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta</p>
                 <form action="login.js" method="post" autocomplete="on">
-                    <div>  
+                    <div class="campo">  
                         <span class="material-symbols-outlined">person</span>
                         <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email" required max="30">
                         <label for="ilogin"></label>
                     </div>
-                    <div>
+                    <div class="campo">
                         <span class="material-symbols-outlined">key</span>
                         <input type="password" name="senha" id="isenha" placeholder="Senha" autocomplete="current-password" required min="8" max="20">
                         <label for="isenha"></label>
@@ -31,7 +31,7 @@
 
                     <div>
                         <input type="submit" value="Entrar">
-                        <a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                        <a href="esqueci.html" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span>
                     </div>
                 </form>
             </div>
