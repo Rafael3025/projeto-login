@@ -32,16 +32,17 @@ main{
 section#login{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%; 
     overflow: hidden;
     
     background-color: #FFFDEB;
     width: 250px;
-    height: 515px;
+    height: 470px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.664);
     transition: width .3s, height .3s;
+    transform: translate(-50%, -50%);
+    transition-timing-function: ease;
     
 }
 /* ::-webkit-scrollbar{
@@ -69,11 +70,35 @@ div#formulario > p{
 }
 form > div.campo{
     background-color: #180e0d56;
+    border: 2px solid #180e0d56;
     width: 100%;
     display: block;
     height: 40px;
     border-radius: 5px;
     margin: 5px 0px;
+}
+div.campo > label{
+    display: none;
+}
+
+div.campo > span{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    
+}
+div.campo > input{
+    background-color: #09d0df83;
+    font-size: 1em;
+    width: calc(123% - 43%);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+div.campo >input:focus-within{
+    background-color: white;
 }
 
 
@@ -105,7 +130,7 @@ form > div > a.botao{
     margin-top: 5px;
     border: 1px solid #0E7980;
     border-radius: 7px;  
-   background-color: white;
+    background-color: white;
 }
 
 form > div > a.botao:hover{

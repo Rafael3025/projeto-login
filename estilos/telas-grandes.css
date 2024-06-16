@@ -6,6 +6,7 @@
     }
     section#login{
         width: 80vw;
+        height: 280px;
     }
     section#login > div#imagem{
         float: left;
@@ -16,6 +17,17 @@
         float: right;
         width: 70%;
     }
+    div.campo > input{
+        background-color: #09d0df83;
+        font-size: 1em;
+        width: calc(132% - 42%);
+        height: 100%;
+        transform: translateY(-12px);
+        border: 0px;
+        border-radius: 8px;
+        padding: 4px;
+    }
+
     
 }
 
@@ -24,6 +36,7 @@
 
     section#login{
         width: 950px;
+        height: 280px;
     }
     section#login > div#imagem{
         float: right;
@@ -35,5 +48,16 @@
         float: left;
         width: 50%;
     }
+    div.campo > input{
+        background-color: #09d0df83;
+        font-size: 1em;
+        width: calc(132% - 42%);
+        height: 100%;
+        transform: translateY(-12px);
+        border: 0px;
+        border-radius: 8px;
+        padding: 4px;
+    }
+
     
 }
