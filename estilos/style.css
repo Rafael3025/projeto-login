@@ -44,15 +44,14 @@ section#login{
     transition: width .3s, height .3s;
     
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     width: 0px;
     height: 0px
-}
+} */
 
 section#login > div#imagem{
     display: block;
     background: var(--cor1) url(../imagens/pexels-pixabay-161154.jpg) no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     height: 200px;
     
@@ -60,4 +59,11 @@ section#login > div#imagem{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+div#formulario > p{
+    font-size: 0.8em;
 }
